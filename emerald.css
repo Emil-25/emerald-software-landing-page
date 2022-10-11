@@ -1,0 +1,92 @@
+:root {
+    --color-success: #198754;
+}
+html, body {
+    overflow-x: hidden;
+}
+* {
+    box-sizing: border-box;
+}
+.font {
+    font-family: 'Playfair Display', serif;
+}
+.text-shadow {
+    text-shadow: 5px 5px 10px var(--color-success) ;
+}
+.hero {
+    background: url("/pics/bg-2.png") no-repeat fixed;
+    height: 80vh;
+    background-size: cover;
+}
+.hero{
+    animation: AnimateBG 6s alternate infinite ease-in-out;
+}
+@keyframes AnimateBG { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+.nav-link.active{
+    background-color: var(--color-success) !important;
+    color:white !important;
+}
+.first-word span{
+    font-size: 3em;
+}
+.first-word p{
+    font-size: 1.5em;
+    text-align: center;
+}
+textarea {
+    resize: none !important;
+}
+.font2 {
+    font-family:Arial, Helvetica, sans-serif;
+}
+#mainheading {
+    transition: all 1s;
+}
+#mainheading:hover {
+    text-shadow: 10px 10px 10px var(--color-success);
+    letter-spacing:5px;
+}
+img:hover {
+    transform: scale(1.1) rotate(-2deg);
+}
+img {
+    transition:.7s;
+}
+.about {
+    transition:all .5s;
+}
+.about:hover {
+    background-color: var(--color-success);
+} 
+.about:hover i{
+    color: white !important;
+} 
+.setup:hover {
+    padding-top:65px !important;
+    padding-bottom:65px !important;
+}
+.setup {
+    transition: .5s;
+}
+
+@media screen and (min-width:900px) {
+    .hero{
+        background-size: 120% 120%;
+    }
+}
+@media screen and (max-width:500px) {
+    .hero h1 {
+        transform: translateY(100px);
+    }
+}
+
+/* For JS part*/
+#navbar {
+    position: fixed;
+    width: 100%;
+    transition: .2s;
+}
