@@ -14,7 +14,7 @@ html, body {
     text-shadow: 5px 5px 10px var(--color-success) ;
 }
 .hero {
-    background: url("/pics/bg-2.png") no-repeat fixed;
+    background: url("./pics/bg-2.png") no-repeat fixed;
     height: 80vh;
     background-size: cover;
 }
